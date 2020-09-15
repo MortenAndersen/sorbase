@@ -1,0 +1,308 @@
+.m-info--bar {
+    text-align: right;
+    padding: 1em 2em;
+    overflow: hidden;
+    line-height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.infobar-widget {
+
+    margin-left: 1em;
+
+
+
+    p {
+        margin: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: inline;
+    }
+
+    .mobile-info & {
+        float: none;
+        margin-left: 0;
+    }
+}
+
+.widget-left {
+
+    >div,
+    >ul,
+    >form {
+        float: left;
+    }
+}
+
+.widget--small--txt {
+    font-size: .9em;
+}
+
+figure {
+    display: block;
+    max-width: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.copyright-con {
+    font-size: .8em;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .copyright-con {
+        text-align: right;
+    }
+}
+
+.show-hide-tricker {
+    border-bottom: 1px solid #f2f2f2;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.sh-plus::before {
+    content: ' + ';
+    color: green;
+    font-weight: normal;
+    width: 20px;
+    float: left;
+}
+
+.sh-minus::before {
+    content: ' - ';
+    color: red;
+    font-weight: normal;
+    width: 20px;
+    float: left;
+}
+
+.frontpage-grid {
+    .textwidget {
+        *:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .gallery figure img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .frontpage-grid {
+
+        .gallery,
+        .frontpage-grid-widget>figure {
+            margin-top: 1em;
+        }
+    }
+
+}
+
+.frontpage-grid {
+    clear: both;
+}
+
+.simple-archive {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .sticky {
+        p {
+            margin: 0;
+        }
+
+        margin-bottom: 1em;
+    }
+
+    .flex-item {
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 2em;
+        article {
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+            .more-link-con {
+                margin-bottom: 1em;
+                margin-top: auto;
+            }
+            &.sticky {
+                .more-link-con {
+                margin-bottom: 0;
+            }
+            }
+        }
+    }
+}
+
+.simple-theme-time {
+    margin: .5em 0;
+}
+
+.simple-theme-download {
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0 0 .5em 0;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+.download-con {
+    margin-bottom: 1em;
+}
+
+.googlemap-con {
+    position: relative;
+    height: 400px;
+    width: 100%;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+.contact-con {
+    align-self: center;
+    text-align: center;
+}
+
+.box-shortcode {
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    aside & {
+        h4 {
+            margin: .5em 0 0 0;
+        }
+    }
+}
+
+.box-img {
+    overflow: hidden;
+    margin-bottom: 1em;
+    img {
+        float: left;
+    }
+}
+
+.samarbejdspartner {
+    background: #fff;
+    padding: 1em;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.samarbejde-shortcode img {
+    float: left;
+    width: 100%;
+}
+
+.samarbejde-shortcode a {
+    display: block;
+    text-decoration: none;
+
+}
+
+.no-logo {
+    text-align: center;
+}
+
+.image-zoom {
+    overflow: hidden;
+}
+
+.image-zoom img {
+    transition: 1s all;
+}
+
+.image-zoom:hover img {
+    transform: scale(1.05);
+}
+
+.cat-tag-con {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#respond {
+    overflow: hidden;
+}
+
+.content-img {
+    margin-bottom: 1em;
+}
+
+.simple-archive {
+    margin-top: 1em;
+    aside & {
+        margin-top: 0;
+    }
+}
+
+.box-shortcode,
+.post-shortcode {
+    margin: 2em 0;
+}
+
+.logo-text-con {
+    display: flex;
+    flex-flow: column;
+}
+
+@media (min-width: 700px) {
+    .logo-text-con {
+        flex-flow: row;
+        align-items: center;
+    }
+}
+.flex-item .ydelse {
+    p {
+        line-height: 1.3;
+    }
+}

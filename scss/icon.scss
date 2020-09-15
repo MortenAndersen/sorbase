@@ -1,0 +1,73 @@
+.icon {
+    line-height: 30px;
+
+    svg {
+        height: 30px;
+        width: 30px;
+        float: left;
+        border: 1px solid rgba(255, 255, 255, .15);
+        background: rgba(255, 255, 255, .1);
+        padding: 5px;
+        margin: 0 10px 0 0;
+
+    }
+}
+
+.svg-icon {
+    fill: #fff;
+    opacity: .6;
+
+    .personer-shortcode & {
+
+        opacity: 1;
+    }
+}
+
+.personer-shortcode {
+    .icon {
+        line-height: 25px;
+    }
+
+    svg {
+        border-color: rgba(255, 255, 255, .4);
+        background: rgb(7, 58, 89);
+        height: 25px;
+        width: 25px;
+        padding: 4px;
+    }
+}
+
+.icon.icon-mail,
+.icon.icon-phone {
+    display: inline-block;
+    padding-right: 1em;
+    footer & {
+        display: block;
+        clear: both;
+        padding-right: 0;
+    }
+
+    svg {
+        margin-right: 5px;
+        footer {
+
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        float: left;
+    }
+}
+.hjemmeside-kontakt {
+    line-height: 1;
+}
+.main {
+    .hjemmeside-kontakt {
+        background: #243887;
+        background-image: linear-gradient(#083a59, #184368);
+        padding: 1em;
+        color: #fff;
+    }
+}

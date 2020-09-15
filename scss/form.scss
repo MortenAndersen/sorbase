@@ -1,0 +1,138 @@
+textarea {
+    width: 100%;
+    outline: none;
+    padding: .5em;
+    border: 1px solid #d7d7d7;
+
+    aside & {
+        height: 100px;
+    }
+}
+
+input {
+    padding: .25em;
+    transition: .5s all;
+
+    .widget-left & {
+        border: none;
+        line-height: inherit;
+        padding: 0;
+        background: ghostwhite;
+
+        .mobile-info & {
+            padding: .5em;
+        }
+    }
+
+    &[type=text],
+    &[type=search],
+    &.search-submit,
+    &[type=email],
+    &[type=number],
+    &[type=url],
+    &[type=tel] {
+        width: 100%;
+        outline: none;
+        -webkit-appearance: none;
+        line-height: 1.7;
+        border: 1px solid #d7d7d7;
+    }
+
+    &[type=submit] {
+        padding-left: 3em;
+        padding-right: 3em;
+        margin: 1em 0 0 0;
+        float: right;
+    }
+
+    &[type=email] {
+        .footer-widget & {
+            width: 100%;
+        }
+    }
+
+    &:focus {
+        background: #f7f7f7;
+    }
+}
+
+// Go Back
+.go-back-con {
+    margin: 2em 0;
+}
+@media (min-width: 769px){
+    .go-back-con {
+    margin: 2em 0 0 0;
+}
+}
+.go-back {
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    border-radius: 3px;
+    padding: .25em 2em;
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.25);
+    transition: 1s all;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+// Select
+select {
+    width: 100%;
+    min-width: 170px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    height: 2.5em;
+    outline: none;
+    background: #fff;
+}
+
+@media (min-width: 700px) {
+    select {
+        width: auto;
+    }
+}
+
+form {
+    .mobile-info & {
+        width: 100%;
+    }
+
+    header & {
+        width: 250px;
+        overflow: hidden;
+
+        input {
+            border: none;
+            float: left;
+            padding: 0 .4em 0 .4em;
+            height: 2em;
+            &[type=search] {
+                background: rgba(255, 255, 255, .5);
+                border-radius: 3px 0 0 3px;
+                background: rgba(255, 255, 255, .5);
+                width: 70%;
+                &:focus {
+                    background: #fff;
+                }
+            }
+            &[type=submit] {
+                background: rgba(255, 255, 255, .8);
+                border-radius: 0 3px 3px 0;
+                width: 30%;
+                margin: 0;
+                padding-left: 0;
+                padding-right: 0;
+                cursor: pointer;
+                &:focus,
+                &:hover {
+                    background: rgba(255, 255, 255, .9);
+                    ;
+                }
+            }
+        }
+    }
+}
