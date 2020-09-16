@@ -10,35 +10,20 @@ if ( ! function_exists ( 'simpleTheme_site_header' ) ) {
                 echo '<div class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '">' . get_bloginfo( 'name' ) . '</a></div>';
             }
 
-        // Logo
-        $custom_logo_id = get_theme_mod( 'custom_logo' );
-        $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-
-        if ( has_custom_logo() ) {
-            echo '<div class="site-logo"><a href="' . esc_url( home_url( '/' ) ) . '"><img src="'. esc_url( $logo[0] ) . '" alt="logo"></a></div>';
-        } else {
             echo '<div class="site-logo"><a href="' . esc_url( home_url( '/' ) ) . '"><img src="'. get_template_directory_uri() . '/assets/images/logo.png" alt="logo"></a></div>';
-        }
 
-
-
-
-          echo '<button id="nav-icon" class="ipad-and-below" aria-label="Åben menu" aria-pressed="false" aria-expanded="false">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="screen-reader-text">Åben eller luk menu</span>
+            echo '<button id="nav-icon" class="ipad-and-below" aria-label="Åben menu" aria-pressed="false" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="screen-reader-text">Åben eller luk menu</span>
                 </button>';
             echo '</div>';
-        }
-
-
-
-        echo '</div>';
     }
+}
 
 
 // Content image
