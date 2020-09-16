@@ -1,6 +1,4 @@
-<div class="background background-header bg-img">
-<?php simpleTheme_header_style(); ?>
-
+<div class="background background-header">
     <div class="l-wrap">
         <div class="page-header l-header--content">
         <?php simpleTheme_site_header(); ?>

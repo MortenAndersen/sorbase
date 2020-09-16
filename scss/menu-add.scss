@@ -3,7 +3,7 @@
         >ul {
             a {
                 &:hover {
-                    background: rgba(0, 0, 0, .1);
+                    background: #fed403;
                 }
             }
             .current_page_ancestor {
@@ -11,7 +11,8 @@
             }
         }
         .current-menu-item > a {
-        	background: rgba(0, 0, 0, .1)
+        	background: #fed403;
+            color: #000;
         }
         .menu-right & {
             flex-direction: row-reverse;

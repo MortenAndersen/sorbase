@@ -4,35 +4,42 @@
 if ( ! function_exists ( 'simpleTheme_site_header' ) ) {
     function simpleTheme_site_header() {
         echo '<div class="logo-text-con">';
+
+         // Title
+            if ( get_bloginfo( 'name' )  !== '' ) {
+                echo '<div class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '">' . get_bloginfo( 'name' ) . '</a></div>';
+            }
+
         // Logo
         $custom_logo_id = get_theme_mod( 'custom_logo' );
         $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 
         if ( has_custom_logo() ) {
             echo '<div class="site-logo"><a href="' . esc_url( home_url( '/' ) ) . '"><img src="'. esc_url( $logo[0] ) . '" alt="logo"></a></div>';
+        } else {
+            echo '<div class="site-logo"><a href="' . esc_url( home_url( '/' ) ) . '"><img src="'. get_template_directory_uri() . '/assets/images/logo.png" alt="logo"></a></div>';
         }
 
-        if ( 'blank' !== get_header_textcolor() ) {
-            if ( has_custom_logo() ) :
-            echo '<div class="site-header-text">';
-        else :
-            echo '<div class="site-header-text none-logo">';
-        endif;
 
-            // Title
-            if ( get_bloginfo( 'name' )  !== '' ) {
-                echo '<div class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '">' . get_bloginfo( 'name' ) . '</a></div>';
-            }
-            // Description
-            $description = get_bloginfo( 'description', 'display' );
-            if ( $description || is_customize_preview() ) {
-                echo '<div class="site-slogan">' . $description . '</div>';
-            }
+
+
+          echo '<button id="nav-icon" class="ipad-and-below" aria-label="Åben menu" aria-pressed="false" aria-expanded="false">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="screen-reader-text">Åben eller luk menu</span>
+                </button>';
             echo '</div>';
         }
+
+
+
         echo '</div>';
     }
-}
+
 
 // Content image
 
@@ -73,29 +80,6 @@ function simpleTheme_the_post_thumbnail() {
     }
 }
 
-}
-
-// Header image
-
-function simpleTheme_header_style() {
-    if( has_header_image() || !empty(get_header_textcolor())  ) {
-        echo '<style>';
-        if( has_header_image() ) {
-            echo '.background-header {';
-            echo 'background-image: url(' . get_header_image() . ');';
-            echo '}';
-            echo '.background-header, .site-header-text {';
-            echo 'color:#' . get_header_textcolor() . ';';
-            echo '}';
-        }
-        if  ( !has_header_image() || !empty(get_header_textcolor()) || !empty(get_background_color()) ) {
-            echo '.background-header, .site-header-text, .page-footer {';
-            echo 'color:#' . get_header_textcolor() . ';';
-            echo 'background:#' . get_background_color() . ';';
-            echo '}';
-        }
-        echo '</style>';
-    }
 }
 
 // Date

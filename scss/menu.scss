@@ -15,7 +15,12 @@
     -webkit-appearance: none;
     border: none;
     outline: none;
-    margin-right: 1em;
+    margin-right: 5vw;
+}
+@media (min-width: 770px){
+    #nav-icon {
+        margin-right: calc(5vw - 2em);
+    }
 }
 
 .mobile-menu-open {
@@ -30,11 +35,7 @@
         top: 4em;
     }
 }
-@media (min-width: 769px){
-    #nav-icon {
-        margin-right: 2em;
-    }
-}
+
 
 
 #nav-icon span {
@@ -42,7 +43,7 @@
     position: absolute;
     height: 4px;
     width: 50%;
-    background: #fff;
+    background: #000;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -53,6 +54,11 @@
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
+
+#nav-icon.open span {
+    background: #fff;
+}
+
 
 
 #nav-icon span:nth-child(even) {
@@ -312,6 +318,7 @@ nav {
         margin: 0;
         padding: 0;
         border: none;
+        text-transform: uppercase;
     }
 
     .all-menu ul ul {
@@ -320,8 +327,8 @@ nav {
         top: 100%;
         left: 0;
         padding: 0;
-        background: rgba(255, 255, 255, 0.95);
-        background: #fff;
+        background: #063769;
+        background-image: linear-gradient(#06305b, #063769);
         line-height: 1.2;
     }
 
@@ -368,13 +375,12 @@ nav {
     }
 
     .all-menu li li a {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        color: inherit;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .all-menu li li a:hover {
-        background: #233489de;
-        background-image: linear-gradient(to left, #184368, #083a59);
+        background: #fed403;
+        //background-image: linear-gradient(to left, #184368, #083a59);
         color: #fff;
 
     }

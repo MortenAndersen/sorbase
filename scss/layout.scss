@@ -3,7 +3,6 @@
     max-width: 1200px;
 }
 
-.l-header--content,
 .l-main--content,
 .l-footer--content,
 .l-width--bottom,
@@ -13,10 +12,12 @@
     overflow: hidden;
     padding: 1em;
 }
+.l-header--content {
+    overflow: hidden;
+}
 
 @media (min-width: 769px) {
 
-    .l-header--content,
     .l-main--content,
     .l-footer--content,
     .l-width--bottom,
@@ -31,13 +32,14 @@
             padding: 1em 2em;
         }
     }
+    .l-header--content {
+        padding: 0 2em;
+    }
 }
 
 .logo__menu-flex {
         display: flex;
         align-items: center;
-        background: #083a59;
-        color: #fff;
     }
 @media (min-width: 1025px) {
     .l-menu--content {

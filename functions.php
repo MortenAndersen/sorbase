@@ -17,9 +17,12 @@ add_action( 'wp_enqueue_scripts', 'simpletheme_scripts' );
 
 // Google Fonts
 function simpletheme_add_google_fonts() {
-	wp_enqueue_style( 'simpletheme-google-fonts', 'https://fonts.googleapis.com/css?family=Questrial', false );
+	wp_enqueue_style( 'simpletheme-google-fonts', 'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700', false );
+	wp_enqueue_style( 'simpletheme-google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700', false );
+
 	}
 add_action( 'wp_enqueue_scripts', 'simpletheme_add_google_fonts' );
+
 
 // ---------------------------------------------------
 if (!function_exists( 'simpletheme_setup' )):
@@ -101,9 +104,6 @@ require get_parent_theme_file_path( '/inc/banner-shortcode.php' );
 // Box
 require get_parent_theme_file_path( '/inc/box.php' );
 
-// Theme Options
-require get_parent_theme_file_path( '/inc/optionspage.php' );
-
 // ACF
 require get_parent_theme_file_path( '/assets/acf/acf-fields-gallery.php' );
 require get_parent_theme_file_path( '/assets/acf/acf-personer.php' );
@@ -113,7 +113,6 @@ require get_parent_theme_file_path( '/assets/acf/acf-referencer.php' );
 require get_parent_theme_file_path( '/assets/acf/acf-filer.php' );
 require get_parent_theme_file_path( '/assets/acf/acf-simple.php' );
 require get_parent_theme_file_path( '/assets/acf/acf-samarbejde.php' );
-require get_parent_theme_file_path( '/assets/acf/acf-color.php' );
 require get_parent_theme_file_path( '/assets/acf/acf-banner.php' );
 
 // WooCommerce
