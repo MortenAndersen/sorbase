@@ -92,18 +92,3 @@
     }
 }
 
-@media (min-width: 700px) {
-    .footer-widget {
-    .menu {
-
-        a {
-            padding: 0 .5em;
-            border-bottom: none;
-            border-left: 1px solid rgba(255,255,255,.1);
-            &:last-of-type {
-                border-right: 1px solid rgba(255,255,255,.1);
-            }
-        }
-    }
-}
-}
