@@ -1,22 +1,3 @@
-<?php
-// Option page
-	switch (get_option('simpletheme-radio-menu')) {
-		case '1':
-			$menu_class = 'menu-default';
-			$menu_type = 'width-menu';
-			break;
-		case '2':
-			$menu_class = 'menu-right';
-			$menu_type = 'width-menu';
-			break;
-		case '3':
-			$menu_class = 'menu-right logo-left';
-			$menu_type = 'small-menu';
-			break;
-	}
-?>
-
-
 <?php if ( has_nav_menu( 'main-menu' ) ) : ?>
 <?php
 	$main_nav = array(
@@ -24,9 +5,9 @@
 		'container' =>  false,
 	);
 ?>
-<div id="navbar" class="menu-con background-2 <?php echo $menu_class ?>">
+<div id="navbar" class="menu-con background-2 menu-right">
 <div class="l-wrap l-menu--content">
-<nav aria-labelledby="hovedmenu-label" class="all-menu js-nav-toggle <?php echo $menu_type ?>">
+<nav aria-labelledby="hovedmenu-label" class="all-menu js-nav-toggle width-menu">
 	<span class="screen-reader-text" id="hovedmenu-label">Hovedmenu</span>
 <?php wp_nav_menu( $main_nav ); ?>
 <?php if ( is_active_sidebar( 'sidebar-infobar' ) || is_active_sidebar( 'sidebar-mobilemenu-widget' )  ) { ?>
@@ -34,7 +15,6 @@
 <?php dynamic_sidebar( 'sidebar-mobilemenu-shop-widget' ); ?>
 </div>
 <div class="mobile-info ipad-and-below">
-<?php // dynamic_sidebar( 'sidebar-infobar' ); ?>
 <?php get_template_part( 'searchform-mobile' ); ?>
 <?php dynamic_sidebar( 'sidebar-mobilemenu-widget' ); ?>
 </div>

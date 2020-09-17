@@ -14,9 +14,6 @@
 <header role="banner" class="logo__menu-flex">
 <?php get_template_part( 'template/sidebar/info-bar' ); ?>
 <?php get_template_part( 'template/header/site-title' ); ?>
-
-
-
 <?php get_template_part( 'template/navigation/nav', 'mainmenu' ); ?>
 </header>
 <?php get_template_part( 'template/sidebar/top-container' ); ?>

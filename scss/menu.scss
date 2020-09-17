@@ -17,6 +17,13 @@
     outline: none;
     margin-right: 5vw;
 }
+@media (max-width: 700px) {
+    #nav-icon {
+        position: absolute;
+    right: 0;
+    bottom: 2em
+    }
+}
 @media (min-width: 770px){
     #nav-icon {
         margin-right: calc(5vw - 2em);

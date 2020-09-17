@@ -308,4 +308,10 @@ figure {
 }
 .background-header {
     border-bottom: 1em solid #fed403;
+    background: #dddee0;
+}
+@media (min-width: 700px){
+    .background-header {
+        background: #fff;
+    }
 }

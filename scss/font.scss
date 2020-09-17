@@ -214,12 +214,14 @@ figcaption {
 }
 
 .site-title {
+    align-self: center;
+    margin: .5em 0;
     color: inherit;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.1em;
     line-height: 1;
-    text-shadow: 1px 1px #999;
+    text-shadow: 1px 1px #99999996;
 
     a {
         color: #063769;
@@ -234,7 +236,7 @@ figcaption {
 }
 
 .site-logo {
-
+    align-self: center;
     img {
         max-width: 220px;
         float: left;
