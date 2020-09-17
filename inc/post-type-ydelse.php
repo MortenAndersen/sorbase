@@ -11,8 +11,8 @@ add_action( 'init', 'simpleTheme_create_posttype_ydelser' );
 	    	'ydelse',
 	    	array(
 	    		'labels' => array(
-	    			'name' => __('Ydelser', 'simpletheme'),
-	    			'singular_name' => __('Ydelse', 'simpletheme')
+	    			'name' => __('Projekter', 'simpletheme'),
+	    			'singular_name' => __('Projekt', 'simpletheme')
 	    		),
 	    		'public' => true,
 	    		'menu_icon' => 'dashicons-hammer',
@@ -25,7 +25,7 @@ add_action( 'init', 'simpleTheme_create_posttype_ydelser' );
 	    		),
 	    		'show_in_rest' => true,
 	    		'rewrite' => array(
-	    			'slug' => 'ydelse'
+	    			'slug' => 'projekt'
 	    		),
 	    	)
 	    );
