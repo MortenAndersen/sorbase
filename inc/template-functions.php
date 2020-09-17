@@ -309,6 +309,8 @@ function simpleTheme_acf_person() {
                     echo '<a href="' . get_field('hjemmeside') . '" target="_blank">' . get_field('klik_tekst') . '</a></li>';
                 }
             echo '</ul>';
+            edit_post_link( __( 'edit', 'simpletheme' ), '<p>', '</p>' );
+
         }
     endif;
 }

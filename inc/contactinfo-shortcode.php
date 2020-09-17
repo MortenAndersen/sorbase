@@ -6,8 +6,7 @@ function simpleTheme_kontakt($atts) {
   global $post;
   ob_start();
 
-  // define attributes and their defaults
-    extract(shortcode_atts(array('grid' => 'g3' ), $atts));
+
 echo '<div class="hjemmeside-kontakt">';
 simpleTheme_mail();
 simpleTheme_phone();
