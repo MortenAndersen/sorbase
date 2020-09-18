@@ -1,0 +1,19 @@
+.ydelse .content-img img {
+	width: 100%;
+}
+.type-liste {
+	border-bottom: 1px solid;
+    padding-bottom: 1em;
+}
+.knap {
+	color: #222;
+	background: #fed403;
+	padding: .5em 2em;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s all;
+	&:hover {
+		background: #ddb907;
+	}
+}
