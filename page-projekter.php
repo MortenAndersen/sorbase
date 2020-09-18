@@ -5,12 +5,8 @@ get_header();
       echo '<div class="main">';
         get_template_part( 'template/page/page', 'loop' );
 				wp_reset_postdata(); // skal nok IKKE bruges!!!
-
-ydelser_type();
-
-// ydelser_all();
-
       echo '</div>';
     echo '</div>';
   echo '</div>';
+  ydelser_type();
 get_footer();

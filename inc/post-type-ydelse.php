@@ -109,6 +109,8 @@ if ( ! function_exists ( 'ydelser_type' ) ) {
         $post_type = 'ydelse';
         $taxonomies = get_object_taxonomies( array( 'post_type' => $post_type ) );
 
+        $i = 1;
+
         foreach( $taxonomies as $taxonomy ) :
             $terms = get_terms( $taxonomy );
             foreach( $terms as $term ) :
@@ -130,6 +132,9 @@ if ( ! function_exists ( 'ydelser_type' ) ) {
               $posts = new WP_Query($args);
 
                 if( $posts->have_posts() ):
+                echo '<div id="content" class="background background-projekt bgid-' . $i . '">';
+                echo '<div class="l-wrap l-main--content">';
+                echo '<div class="main">';
                     echo '<div class="ydelse-beskrivelse">';
                         echo '<h3>' . $term->name . '</h3>';
                         echo '<p>' . $term->description . '</p>';
@@ -156,9 +161,14 @@ if ( ! function_exists ( 'ydelser_type' ) ) {
                             echo '</div>';
                         endwhile;
                     echo '</div>';
-                endif;
 
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+                endif;
+$i++;
             endforeach;
+
         endforeach;
         wp_reset_query();
 
