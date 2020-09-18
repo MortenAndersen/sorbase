@@ -17,16 +17,18 @@
 if( have_rows('accordion') ):
 	echo '<div class="accordion">';
     // Loop through rows.
+	$i = 1;
     while( have_rows('accordion') ) : the_row();
 	        // Load sub field value.
 	        $overskrift = get_sub_field('acc_overskrift');
 	        $body = get_sub_field('acc_body');
 	        // Do something...
-	        echo '<h3>' . $overskrift . '</h3>';
+	        echo '<h3 id="id-' . $i . '">' . $overskrift . '</h3>';
 	        echo '<div>';
 	        	echo $body;
     			echo '</div>';
     // End loop.
+    $i++;
     endwhile;
     echo '</div>';
 endif;
