@@ -5,6 +5,12 @@
   font-size: 1em;
   cursor: pointer;
   outline: none;
+  background: #fed404;
+  font-weight: 400;
+  transition: .5s all;
+  &:hover {
+    background: #e7c107;
+  }
 }
 .ui-accordion-content {
 	padding: 1em;
