@@ -124,4 +124,11 @@
             $(this).next('.show-hide-content').slideToggle();
         });
 
+        // Accordion
+        $( ".accordion" ).accordion({
+            active: false,
+            collapsible: true,
+            heightStyle: "content",
+        });
+
     }); }(jQuery))

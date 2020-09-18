@@ -10,7 +10,7 @@ add_action( 'wp_enqueue_scripts', 'simpletheme_footer_enqueue_scripts' );
 
 // Theme jQuery fil
 function simpletheme_scripts() {
-  wp_register_script( 'theme-script', get_template_directory_uri() . '/assets/js/theme.js', array('jquery') );
+  wp_register_script( 'theme-script', get_template_directory_uri() . '/assets/js/theme.js', array('jquery-ui-accordion') );
   wp_enqueue_script( 'theme-script' );
 }
 add_action( 'wp_enqueue_scripts', 'simpletheme_scripts' );

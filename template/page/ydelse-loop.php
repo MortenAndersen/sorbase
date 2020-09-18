@@ -12,5 +12,25 @@
 
 	the_content();
  endwhile;
+
+// Check rows exists.
+if( have_rows('accordion') ):
+	echo '<div class="accordion">';
+    // Loop through rows.
+    while( have_rows('accordion') ) : the_row();
+	        // Load sub field value.
+	        $overskrift = get_sub_field('acc_overskrift');
+	        $body = get_sub_field('acc_body');
+	        // Do something...
+	        echo '<h3>' . $overskrift . '</h3>';
+	        echo '<div>';
+	        	echo $body;
+    			echo '</div>';
+    // End loop.
+    endwhile;
+    echo '</div>';
+endif;
+
+
 echo '</article>';
 endif;
