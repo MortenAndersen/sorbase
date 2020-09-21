@@ -21,7 +21,6 @@ add_action( 'init', 'simpleTheme_create_posttype_ydelser' );
 	    			'editor',
 	    			'excerpt',
 	    			'thumbnail',
-	    			'page-attributes'
 	    		),
 	    		'show_in_rest' => true,
 	    		'rewrite' => array(
@@ -118,8 +117,6 @@ if ( ! function_exists ( 'ydelser_type' ) ) {
               $args = array(
                 'post_type' => $post_type,
                 'posts_per_page' => -1,
-                'orderby' => 'menu_order',
-                'order' => 'asc',
                 'tax_query' => array(
                   array(
                     'taxonomy' => $taxonomy,
