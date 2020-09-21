@@ -133,7 +133,7 @@ if ( ! function_exists ( 'ydelser_type' ) ) {
                 echo '<div class="l-wrap l-main--content">';
                 echo '<div class="main">';
                     echo '<div class="ydelse-beskrivelse">';
-                        echo '<h3>' . $term->name . '</h3>';
+                        echo '<h3 class="term-name">' . $term->name . '</h3>';
                         echo '<p>' . $term->description . '</p>';
                     echo '</div>';
                     echo '<div class="simple-archive flex-con g4">';
