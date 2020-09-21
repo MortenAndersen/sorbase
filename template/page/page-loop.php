@@ -35,10 +35,12 @@ if( get_field('intra_body') ):
  *     - child_title (Text) - intra_file_subsub
  */
 if( have_rows('inta_filer_con') ):
+	echo '<div class="intra-filer flex-con g2">';
     while( have_rows('inta_filer_con') ) : the_row();
 
         // Get parent value.
         $parent_title = get_sub_field('intra_overskrift');
+        echo '<div class="intra-filer-con">';
         echo '<p>' . $parent_title . '</p>';
         // Loop over sub repeater rows.
         if( have_rows('intra_filer_sub') ):
@@ -51,7 +53,9 @@ if( have_rows('inta_filer_con') ):
             endwhile;
             echo '</ul>';
         endif;
+        echo '</div>';
     endwhile;
+    echo '</div>';
 endif;
 
 
