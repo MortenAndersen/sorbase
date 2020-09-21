@@ -11,8 +11,8 @@ add_action( 'init', 'simpleTheme_create_posttype_referencer' );
 	    	'reference',
 	    	array(
 	    		'labels' => array(
-	    			'name' => __('Referencer', 'simpletheme'),
-	    			'singular_name' => __('Reference', 'simpletheme')
+	    			'name' => __('Produkter', 'simpletheme'),
+	    			'singular_name' => __('Produkt', 'simpletheme')
 	    		),
 	    		'public' => true,
 	    		'menu_icon' => 'dashicons-nametag',
@@ -25,7 +25,7 @@ add_action( 'init', 'simpleTheme_create_posttype_referencer' );
 	    		),
 	    		'show_in_rest' => true,
 	    		'rewrite' => array(
-	    			'slug' => 'reference'
+	    			'slug' => 'produkt'
 	    		),
 	    	)
 	    );
