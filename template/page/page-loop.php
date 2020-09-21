@@ -14,6 +14,20 @@ if ( is_single() && !is_singular( 'person' ) ) {
 
 the_content();
 
+
+
+if( get_field('intra_body') ):
+ 	 if (!is_user_logged_in()) {
+    wp_login_form();
+}
+ if (is_user_logged_in()) {
+ 	echo '<div class="intranet">';
+     the_field('intra_body');
+  echo '</div>';
+   }
+endif;
+
+
 simpleTheme_acf_gallery();
 
 simpleTheme_go_back();

@@ -30,7 +30,8 @@ input {
     &[type=email],
     &[type=number],
     &[type=url],
-    &[type=tel] {
+    &[type=tel],
+    &[type=password] {
         width: 100%;
         outline: none;
         -webkit-appearance: none;
@@ -135,4 +136,13 @@ form {
             }
         }
     }
+}
+#loginform {
+    max-width: 500px;
+    background: #063361;
+    padding: 1em 2em 2em 2em;
+    color: #fff;
+    overflow: hidden;
+    font-size: .8em;
+    margin: 1em 0;
 }
