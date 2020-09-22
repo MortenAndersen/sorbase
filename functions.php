@@ -17,7 +17,6 @@ add_action( 'wp_enqueue_scripts', 'simpletheme_scripts' );
 
 // Google Fonts
 function simpletheme_add_google_fonts() {
-	wp_enqueue_style( 'simpletheme-google-fonts', 'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700', false );
 	wp_enqueue_style( 'simpletheme-google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700', false );
 
 	}
