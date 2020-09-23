@@ -43,3 +43,18 @@
 	background: #fff;
 	color: #000;
 }
+#signup-content {
+	background: #fff;
+    overflow: hidden;
+}
+.wp-signup-container {
+	max-width: 1200px;
+	background: #07315c;
+    padding: 3em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    overflow: hidden;
+    form {
+    	max-width: 500px;
+    }
+}
