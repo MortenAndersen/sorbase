@@ -7,7 +7,7 @@
 
 
 
-if ( is_single() && !is_singular( 'person' ) ) {
+if ( is_single() && !is_singular( 'person' ) && !is_singular( 'event' ) ) {
 	simpleTheme_date();
 	simleTheme_cat_tag();
 }
