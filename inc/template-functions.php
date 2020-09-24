@@ -141,7 +141,7 @@ function simpleTheme_download() {
         // ACF
 
 if( have_rows('filer_til_download') ):
-    echo '<div class="download-con flex-con g3>';
+    echo '<div class="download-con flex-con g3">';
     while( have_rows('filer_til_download') ) : the_row();
 
         // Get parent value.
