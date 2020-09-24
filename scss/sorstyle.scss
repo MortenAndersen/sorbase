@@ -79,3 +79,13 @@
         color: #000;
     }
 }
+.filer {
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+        padding: .25em 0;
+        list-style-type: none;
+        border-bottom: 1px solid #f2f2f2;
+    }
+}

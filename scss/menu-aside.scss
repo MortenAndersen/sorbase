@@ -2,6 +2,7 @@
     background: #f2f2f2;
     padding: 2em;
     box-shadow: 0 0 2px #848484;
+    overflow-wrap: break-word;
 
     .widget-title {
         border-bottom: 3px solid #fff;
@@ -27,7 +28,7 @@
         ;
         border-bottom: 1px solid #e1e1e1;
         padding: .5em 0;
-        padding-left: .25em;
+        padding-left: .5em;
         text-decoration: none;
         color: #063769;
 
@@ -61,8 +62,7 @@
 
         &.current-menu-item {
             a {
-                background: #063769;
-                color: #fff;
+                background: #dddee0;
             }
         }
     }
