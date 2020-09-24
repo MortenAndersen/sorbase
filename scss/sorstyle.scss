@@ -33,7 +33,9 @@
 .bgid-2 {
     background: #dddee0;
     color: #222;
-
+    .flex-item {
+        border-color: #063769
+    }
 }
 
 .bgid-3 {}
@@ -41,6 +43,9 @@
 .bgid-4 {
     background: #fed404;
     color: #000;
+    .flex-item {
+        border-color: #063769
+    }
 }
 
 .background-front3 {
