@@ -147,7 +147,7 @@ if( have_rows('filer_til_download') ):
         // Get parent value.
         $parent_title = get_sub_field('filer_overskrift');
         echo '<div class="filer-con flex-item">';
-        echo '<p>' . $parent_title . '</p>';
+        echo '<p><strong>' . $parent_title . '</strong></p>';
         // Loop over sub repeater rows.
         if( have_rows('filer_filer') ):
             echo '<ul class="filer">';
@@ -163,10 +163,6 @@ if( have_rows('filer_til_download') ):
     endwhile;
     echo '</div>';
 endif;
-
-
-
-
 
         // end ACF
 }
