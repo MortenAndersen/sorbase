@@ -141,12 +141,12 @@ function simpleTheme_download() {
         // ACF
 
 if( have_rows('filer_til_download') ):
-    echo '<div class="download-con>';
+    echo '<div class="download-con flex-con g3>';
     while( have_rows('filer_til_download') ) : the_row();
 
         // Get parent value.
         $parent_title = get_sub_field('filer_overskrift');
-        echo '<div class="filer-con">';
+        echo '<div class="filer-con flex-item">';
         echo '<p>' . $parent_title . '</p>';
         // Loop over sub repeater rows.
         if( have_rows('filer_filer') ):
