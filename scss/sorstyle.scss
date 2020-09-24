@@ -1,60 +1,67 @@
 .ydelse .content-img img {
-	width: 100%;
+    width: 100%;
 }
+
 .type-liste {
-	border-bottom: 1px solid;
+    border-bottom: 1px solid;
     padding-bottom: 1em;
 }
+
 .knap {
-	color: #222;
-	background: #fed403;
-	padding: .5em 2em;
-	display: inline-block;
-	text-decoration: none;
-	text-transform: uppercase;
-	transition: .5s all;
-	&:hover {
-		background: #ddb907;
-	}
+    color: #222;
+    background: #fed403;
+    padding: .5em 2em;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s all;
+
+    &:hover {
+        background: #ddb907;
+    }
 }
+
 .bgid-1,
 .bgid-2,
 .bgid-3,
 .bgid-4 {
-	padding-bottom: 2em;
+    padding-bottom: 2em;
 }
-.bgid-1{
 
-}
-.bgid-2{
-	background: #dddee0;
+.bgid-1 {}
+
+.bgid-2 {
+    background: #dddee0;
     color: #222;
 
 }
 
-.bgid-3{
+.bgid-3 {}
 
-}
-.bgid-4{
-	background: #fed404;
+.bgid-4 {
+    background: #fed404;
     color: #000;
 }
+
 .background-front3 {
-	background: #fff;
-	color: #000;
+    background: #fff;
+    color: #000;
 }
+
 #signup-content {
-	background: #fff;
+    background: #fff;
     overflow: hidden;
 }
+
 .wp-signup-container {
-	max-width: 1200px;
-	background: #07315c;
+    max-width: 1200px;
+    background: #07315c;
     padding: 3em;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 3em !important;
+    margin-bottom: 3em !important;
     overflow: hidden;
+
     form {
-    	max-width: 500px;
+        max-width: 500px;
     }
 }

@@ -2,15 +2,34 @@
 if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
-	'key' => 'group_5d9c408ef1f9c',
-	'title' => 'Simple Theme filer',
+	'key' => 'group_5f686637c9859',
+	'title' => 'Intranet',
 	'fields' => array(
 		array(
-			'key' => 'field_5d9c40ae8e176',
-			'label' => 'Filer til download',
-			'name' => 'filer_til_download',
+			'key' => 'field_5f686657d9cba',
+			'label' => 'Body',
+			'name' => 'intra_body',
+			'type' => 'wysiwyg',
+			'instructions' => 'Indholdet vises KUN hvis man er logget ind på siden!',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+			'delay' => 0,
+		),
+		array(
+			'key' => 'field_5f687414d9165',
+			'label' => 'Filer',
+			'name' => 'inta_filer_con',
 			'type' => 'repeater',
-			'instructions' => 'Offentlige filer (kan ses UDEN login!)',
+			'instructions' => 'Indholdet vises KUN hvis man er logget ind på siden og kræver tekst i Intranet body feltet!',
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
@@ -21,13 +40,13 @@ acf_add_local_field_group(array(
 			'collapsed' => '',
 			'min' => 0,
 			'max' => 0,
-			'layout' => 'block',
-			'button_label' => 'Ny fil',
+			'layout' => 'row',
+			'button_label' => '',
 			'sub_fields' => array(
 				array(
-					'key' => 'field_5f6c54995bcf0',
+					'key' => 'field_5f687439d9166',
 					'label' => 'Overskrift',
-					'name' => 'filer_overskrift',
+					'name' => 'intra_overskrift',
 					'type' => 'text',
 					'instructions' => '',
 					'required' => 0,
@@ -44,9 +63,9 @@ acf_add_local_field_group(array(
 					'maxlength' => '',
 				),
 				array(
-					'key' => 'field_5f6c54ad5bcf1',
+					'key' => 'field_5f6874edf3e5e',
 					'label' => 'Filer',
-					'name' => 'filer_filer',
+					'name' => 'intra_filer_sub',
 					'type' => 'repeater',
 					'instructions' => '',
 					'required' => 0,
@@ -63,9 +82,9 @@ acf_add_local_field_group(array(
 					'button_label' => '',
 					'sub_fields' => array(
 						array(
-							'key' => 'field_5f6c54cc5bcf2',
+							'key' => 'field_5f68750cf3e5f',
 							'label' => 'File',
-							'name' => 'sub_file',
+							'name' => 'intra_file_subsub',
 							'type' => 'file',
 							'instructions' => '',
 							'required' => 0,
@@ -91,13 +110,6 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'post_type',
 				'operator' => '==',
-				'value' => 'post',
-			),
-		),
-		array(
-			array(
-				'param' => 'post_type',
-				'operator' => '==',
 				'value' => 'page',
 			),
 		),
@@ -106,10 +118,10 @@ acf_add_local_field_group(array(
 	'position' => 'normal',
 	'style' => 'default',
 	'label_placement' => 'top',
-	'instruction_placement' => 'field',
+	'instruction_placement' => 'label',
 	'hide_on_screen' => '',
 	'active' => true,
-	'description' => 'Offentlige filer',
+	'description' => '',
 ));
 
 endif;

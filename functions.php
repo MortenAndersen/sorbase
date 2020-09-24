@@ -113,6 +113,7 @@ require get_parent_theme_file_path( '/assets/acf/acf-filer.php' );
 require get_parent_theme_file_path( '/assets/acf/acf-simple.php' );
 require get_parent_theme_file_path( '/assets/acf/acf-samarbejde.php' );
 require get_parent_theme_file_path( '/assets/acf/acf-banner.php' );
+require get_parent_theme_file_path( '/assets/acf/acf-intranet.php' );
 
 // WooCommerce
 require get_parent_theme_file_path( '/inc/woo-functions.php' );

@@ -139,24 +139,35 @@ function simpleTheme_aside_right() {
 
 function simpleTheme_download() {
         // ACF
-        if( function_exists('acf_add_local_field_group') ):
-            if( get_field('filer_til_download') ):
-                echo '<div class="download-con">';
-                echo '<h5 class="widget-title widget-title-download">Download</h5>';
-                echo '<ul class="simple-theme-download">';
-                 while(the_repeater_field('filer_til_download')):
-                echo '<li>';
-                    $download = get_sub_field( 'fil' );
-                        echo '<a href="' . $download['url'] . '" target="_blank">' . $download['title'] . '</a>';
-                        if ( $download['caption'] ) {
-                            echo '<div class="download-caption small-txt">' . $download['caption'] . '</div>';
-                        }
-                echo '</li>';
+
+if( have_rows('filer_til_download') ):
+    echo '<div class="download-con>';
+    while( have_rows('filer_til_download') ) : the_row();
+
+        // Get parent value.
+        $parent_title = get_sub_field('filer_overskrift');
+        echo '<div class="filer-con">';
+        echo '<p>' . $parent_title . '</p>';
+        // Loop over sub repeater rows.
+        if( have_rows('filer_filer') ):
+            echo '<ul class="filer">';
+            while( have_rows('filer_filer') ) : the_row();
+                // Get sub value.
+                $child_title = get_sub_field('sub_file');
+                echo '<li><a href="' . $child_title['url'] . '" target="_blank">' . $child_title['title'] . '</a></li>';
+
             endwhile;
             echo '</ul>';
-            echo '</div>';
-            endif;
         endif;
+        echo '</div>';
+    endwhile;
+    echo '</div>';
+endif;
+
+
+
+
+
         // end ACF
 }
 
