@@ -55,7 +55,8 @@
 
 .wp-signup-container {
     max-width: 1200px;
-    background: #07315c;
+    background: #fff;
+    color: #000;
     padding: 3em;
     margin-top: 3em !important;
     margin-bottom: 3em !important;
@@ -65,13 +66,16 @@
         max-width: 500px;
     }
 }
+
 .wp-activate-container {
     max-width: 1200px;
-    background: #07315c;
+    background: #fff;
+    color: #000;
     padding: 3em;
     margin: 3em auto;
     overflow: hidden;
+
     a {
-        color: #fff;
+        color: #000;
     }
 }
