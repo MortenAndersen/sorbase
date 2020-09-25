@@ -15,6 +15,10 @@ if ( is_single() && !is_singular( 'person' ) && !is_singular( 'event' ) ) {
 the_content();
 
 
+$blog_id = get_current_blog_id();
+
+echo '<p>BLOG ID = ' . $blog_id . '</p>';
+
 
 if( get_field('intra_body') ):
  	 if (!is_user_logged_in()) {
