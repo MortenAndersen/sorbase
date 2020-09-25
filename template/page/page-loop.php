@@ -14,23 +14,18 @@ if ( is_single() && !is_singular( 'person' ) && !is_singular( 'event' ) ) {
 
 the_content();
 
-// Print blog ID
-$blog_id = get_current_blog_id();
-echo '<p>BLOG ID = ' . $blog_id . '</p>';
-
 
 if( get_field('intra_body') ):
  	 if (!is_user_logged_in()) {
     wp_login_form();
 }
+
  // if (is_user_logged_in()) {
 $user_id = get_current_user_id();
-
-if ( is_user_member_of_blog( $user_id, $blog_id ) || is_user_logged_in() &&  $blog_id = 1 ) {
+$blog_id = get_current_blog_id();
+if ( is_user_member_of_blog( $user_id, $blog_id ) ) {
  	echo '<div class="intranet">';
      the_field('intra_body');
-
-
 
      /**
  * Field Structure:
