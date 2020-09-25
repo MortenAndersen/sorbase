@@ -26,7 +26,7 @@ if( get_field('intra_body') ):
  // if (is_user_logged_in()) {
 $user_id = get_current_user_id();
 
-if ( is_user_member_of_blog( $user_id, $blog_id ) ) {
+if ( is_user_member_of_blog( $user_id, $blog_id ) || is_user_logged_in() &&  $blog_id = 1 ) {
  	echo '<div class="intranet">';
      the_field('intra_body');
 
