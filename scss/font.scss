@@ -232,10 +232,10 @@ figcaption {
     margin: .5em 0;
     color: inherit;
     text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1.1em;
+    font-weight: bold;
+    font-size: clamp(0.9rem, 1.5vw, 1.5rem);
     line-height: 1;
-    text-shadow: 1px 1px #99999996;
+    margin-left: 1em;
 
     a {
         color: #063769;
@@ -251,6 +251,7 @@ figcaption {
 
 .site-logo {
     align-self: center;
+    margin: .5em 0;
 
     img {
         max-width: 220px;
@@ -260,18 +261,11 @@ figcaption {
 
 @media (min-width: 700px) {
     .site-logo {
-        border-left: 1em solid #fed404;
-        border-right: 1em solid #fed404;
-        margin-right: 5vw;
-        margin-left: 1vw;
+
     }
 }
 
-@media (min-width: 1025px) {
-    .site-logo {
-        box-shadow: -10px 0px 40px #777;
-    }
-}
+
 
 .site-header-text {
     float: left;

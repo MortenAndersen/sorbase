@@ -27,6 +27,7 @@ if ( is_user_member_of_blog( $user_id, $blog_id ) ) {
  	echo '<div class="intranet">';
      the_field('intra_body');
 
+
      /**
  * Field Structure:
  *

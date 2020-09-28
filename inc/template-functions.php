@@ -5,12 +5,13 @@ if ( ! function_exists ( 'simpleTheme_site_header' ) ) {
     function simpleTheme_site_header() {
         echo '<div class="logo-text-con">';
 
-         // Title
+        // Logo
+            echo '<div class="site-logo"><a href="' . esc_url( home_url( '/' ) ) . '"><img src="'. get_template_directory_uri() . '/assets/images/logo.png" alt="logo"></a></div>';
+
+            // Title
             if ( get_bloginfo( 'name' )  !== '' ) {
                 echo '<div class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '">' . get_bloginfo( 'name' ) . '</a></div>';
             }
-
-            echo '<div class="site-logo"><a href="' . esc_url( home_url( '/' ) ) . '"><img src="'. get_template_directory_uri() . '/assets/images/logo.png" alt="logo"></a></div>';
 
             echo '<button id="nav-icon" class="ipad-and-below" aria-label="Åben menu" aria-pressed="false" aria-expanded="false">
                     <span></span>
