@@ -1,17 +1,17 @@
 <?php
 
 
-add_shortcode('samarbejde', 'simpleTheme_samarbejde');
+add_shortcode('soroptima', 'simpleTheme_samarbejde');
 function simpleTheme_samarbejde($atts) {
   global $post;
   ob_start();
 
   // define attributes and their defaults
-    extract(shortcode_atts(array('grid' => 'g3' ), $atts));
+    extract(shortcode_atts(array('grid' => 'g3', 'antal' => '-1' ), $atts));
 
  $loop = new WP_Query( array(
  	'post_type' => 'samarbejde',
-  'posts_per_page' => -1
+  'posts_per_page' => $antal
  )
 );
 

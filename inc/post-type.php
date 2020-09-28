@@ -36,8 +36,8 @@ if( function_exists('acf_add_local_field_group') ):
 	    	'samarbejde',
 	    	array(
 	    		'labels' => array(
-	    			'name' => __('Samarbejde', 'simpletheme'),
-	    			'singular_name' => __('Samarbejde', 'simpletheme')
+	    			'name' => __('Soroptima', 'simpletheme'),
+	    			'singular_name' => __('Soroptima', 'simpletheme')
 	    		),
 	    		'public' => true,
 	    		'publicly_queryable' => false,
