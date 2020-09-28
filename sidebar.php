@@ -2,6 +2,7 @@
     <div class="l-wrap">
         <footer class="page-footer l-footer--content grid-con" role="contentinfo">
         	<?php get_template_part( 'sor-menu' ); ?>
+        	<?php get_template_part( 'search-footer' ); ?>
         	<?php dynamic_sidebar( 'sidebar-footer' ); ?>
         	<?php get_template_part( 'template/navigation/nav', 'footermenu' ); ?>
     </div>
