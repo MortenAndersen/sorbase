@@ -120,7 +120,17 @@
         color: #fff
     }
 }
-
+.display-posts-listing .date {
+    font-weight: bold;
+    color: #063769;
+    display: block;
+}
+.display-posts-listing a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 /* her er det nye */
 
 .background-front1 .box-shortcode .flex-item {
@@ -147,6 +157,9 @@
 .campaign a {
     font-weight: normal;
 }
+.campaign a:hover{
+    text-decoration: underline;
+    }
 .background-front2 {
     color: #000;
 }
