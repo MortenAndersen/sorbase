@@ -229,6 +229,9 @@ figure {
             margin: .5em 0 0 0;
         }
     }
+    .flex-item .flex-item {
+        padding: 1em;
+    }
 }
 
 .box-img {
