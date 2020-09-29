@@ -125,12 +125,13 @@
     color: #063769;
     display: block;
 }
-.display-posts-listing a {
+.box-shortcode .display-posts-listing li a {
     text-decoration: none;
     &:hover {
         text-decoration: underline;
     }
 }
+
 /* her er det nye */
 
 .background-front1 .box-shortcode .flex-item {
