@@ -214,6 +214,15 @@ figure {
         color: inherit;
         display: block;
     }
+    p,li {
+        a {
+            display: inline-block;
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
 
     aside & {
         h4 {

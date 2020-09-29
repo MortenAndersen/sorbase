@@ -120,3 +120,33 @@
         color: #fff
     }
 }
+
+/* her er det nye */
+
+.background-front1 .box-shortcode .flex-item {
+    background: #fff
+}
+.box-shortcode .flex-item ul {
+    margin: 0;
+    padding: 0;
+}
+.box-shortcode .flex-item li,
+.campaign{
+    margin: 0;
+    padding: .5em 0;
+    list-style-type: none;
+}
+.background-front1 li,
+.campaign{
+    border-bottom: 1px solid #f2f2f2
+}
+.campaign {
+    color: #063769;
+    font-weight: bold
+}
+.campaign a {
+    font-weight: normal;
+}
+.background-front2 {
+    color: #000;
+}
