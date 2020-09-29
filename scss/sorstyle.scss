@@ -163,15 +163,20 @@
 }
 .background-front6 h5 {
     font-size: 1em;
-    color: #4f4c4c;
+    color: #341818;
     font-weight: normal;
-    text-align: left;
     line-height: 1.2;
     margin: .75em 0 0 0;
+    background: #ffffff6e;
+    padding: 1em;
+    border: 1px solid #fff;
+    min-height: 5em;
 }
 .background-front6 img {
-    -webkit-box-shadow: 0 0 10px #000;
-    box-shadow: 0 0 10px #000
+    border: 2px solid #fff;
+    padding: .5em;
+    background: #ffffff85;
+    margin-bottom: 0.5em;
 }
 #rss-2 {
     color: #fff;
