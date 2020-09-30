@@ -338,10 +338,12 @@ figure {
 }
 
 .intranet {
-    background: #dddee0;
     padding: 2em;
     margin: 2em 0;
-    border: 1px solid;
+    border: 1px solid #dddee0;
+    background-image: url(assets/images/lock.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
 }
 .event-data {
     padding: 1em;
