@@ -63,8 +63,10 @@
     background: #fed404;
     color: #000;
 }
-
-
+.bgid-1 .simple-archive .flex-item,
+.bgid-3 .simple-archive .flex-item {
+    border-color: #000;
+}
 
 #signup-content {
     background: #fff;
