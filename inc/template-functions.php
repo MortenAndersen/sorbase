@@ -397,3 +397,9 @@ function simpleTheme_comments() {
 
     comment_form();
 }
+
+// Favicon
+function sor_favicon_link() {
+    echo '<link rel="shortcut icon" href="' .  get_template_directory_uri() . '/favicon.ico" />' . "\n";
+}
+add_action( 'wp_head', 'sor_favicon_link' );
