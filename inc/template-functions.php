@@ -139,7 +139,6 @@ function simpleTheme_aside_right() {
 // Filer - Download
 
 function simpleTheme_download() {
-        // ACF
 
 if( have_rows('filer_til_download') ):
     echo '<div class="download-con flex-con g3">';
@@ -165,7 +164,34 @@ if( have_rows('filer_til_download') ):
     echo '</div>';
 endif;
 
-        // end ACF
+}
+
+function simpleTheme_aside_download() {
+
+if( have_rows('filer_til_download') ):
+    echo '<div class="download-con flex-con g1">';
+    while( have_rows('filer_til_download') ) : the_row();
+
+        // Get parent value.
+        $parent_title = get_sub_field('filer_overskrift');
+        echo '<div class="filer-con flex-item">';
+        echo '<p><strong>' . $parent_title . '</strong></p>';
+        // Loop over sub repeater rows.
+        if( have_rows('filer_filer') ):
+            echo '<ul class="filer">';
+            while( have_rows('filer_filer') ) : the_row();
+                // Get sub value.
+                $child_title = get_sub_field('sub_file');
+                echo '<li><a href="' . $child_title['url'] . '" target="_blank">' . $child_title['title'] . '</a></li>';
+
+            endwhile;
+            echo '</ul>';
+        endif;
+        echo '</div>';
+    endwhile;
+    echo '</div>';
+endif;
+
 }
 
 // Blog loop - Sticky posts
