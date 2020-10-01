@@ -278,9 +278,12 @@ a.knap2 {
     width: 100%;
         li {
             margin: 0;
-            padding: 0;
+            padding: .5em 0;
             list-style-type: none;
             border-bottom: 1px solid #f2f2f2;
+        }
+        .site-1 {
+            display: none;
         }
 }
 @media (min-width: 800px){
@@ -289,7 +292,8 @@ a.knap2 {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
         li {
-
+            padding: 0;
+            border-bottom: none;
         }
     }
 }
