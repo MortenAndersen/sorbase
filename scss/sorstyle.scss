@@ -225,6 +225,14 @@ article.event {
   padding: 2em;
   margin-top: 2em;
 }
+.en {
+    li {
+    border-bottom: 1px solid #fff
+  }
+  a {
+    color: #000
+  }
+}
 @media (min-width: 700px){
   .entotre {
   display: grid;
@@ -242,13 +250,5 @@ article.event {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
-}
-}
-.entotre {
-    a {
-        color: #000;
-    }
-    li {
-    border-bottom: 1px solid #fff
 }
 }
