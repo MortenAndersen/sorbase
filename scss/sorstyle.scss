@@ -252,3 +252,19 @@ article.event {
     grid-row-end: 1;
 }
 }
+
+a.knap2 {
+    background: #dddddd;
+    background-image: linear-gradient(45deg, #b6b6b6, transparent 100px);
+    display: block !important;
+    padding: 0.5em 1em;
+    text-decoration: none !important;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 2em 0 0 0;
+    font-size: .8em;
+    border-radius: 2px;
+    &:hover {
+        background-image: linear-gradient(45deg, transparent, #b6b6b6 100px);
+    }
+}
