@@ -290,7 +290,7 @@ a.knap2 {
     .subsites {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1em;
+        grid-gap: .25em;
         li {
             padding: 0;
             border-bottom: none;
