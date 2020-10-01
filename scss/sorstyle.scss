@@ -12,7 +12,7 @@
     background: #fed403;
     padding: .5em 2em;
     display: inline-block;
-    text-decoration: none;
+    text-decoration: none !important;
     text-transform: uppercase;
     transition: .5s all;
 
@@ -211,4 +211,31 @@
 }
 article.event {
     margin: 0;
+}
+
+.en,
+.totre {
+  background: #f2f2f2;
+  color: #000;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+@media (min-width: 700px){
+  .entotre {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(3, 1fr);
+}
+.en {
+  grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.totre {
+  grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
 }
