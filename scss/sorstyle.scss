@@ -252,6 +252,9 @@ article.event {
     grid-row-end: 1;
 }
 }
+.knapcon {
+    margin: 0;
+}
 
 a.knap2 {
     background: #dddddd;
@@ -261,7 +264,7 @@ a.knap2 {
     text-decoration: none !important;
     text-align: right;
     text-transform: uppercase;
-    margin: 2em 0 0 0;
+    margin: 0;
     font-size: .8em;
     border-radius: 2px;
     &:hover {
