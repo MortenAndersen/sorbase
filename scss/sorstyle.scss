@@ -128,11 +128,14 @@
     color: #063769;
     display: block;
 }
-.box-shortcode .display-posts-listing li a {
+.box-shortcode,
+.entotre {
+ .display-posts-listing li a {
     text-decoration: none;
     &:hover {
         text-decoration: underline;
     }
+}
 }
 
 /* her er det nye */
@@ -140,12 +143,14 @@
 .background-front1 .box-shortcode .flex-item {
     background: #fff
 }
-.box-shortcode .flex-item ul {
+.box-shortcode .flex-item ul,
+.entotre ul {
     margin: 0;
     padding: 0;
 }
 .box-shortcode .flex-item li,
-.campaign{
+.campaign,
+.entotre li {
     margin: 0;
     padding: .5em 0;
     list-style-type: none;
