@@ -303,3 +303,26 @@ a.knap2 {
         grid-template-columns: repeat(5, 1fr);
     }
 }
+.danske-klubber-con {
+    margin-top: 2em;
+    .flex-item {
+        padding: 2em;
+        background: #f2f2f2;
+    }
+}
+.danske-kubber {
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+        padding: .25em 0;
+        list-style-type: none;
+        border-bottom: 1px solid #fff;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
