@@ -5,7 +5,6 @@
 		<li><a href="http://www.soroptimisteurope.org/" target="_blank">SI Europa</a></li>
 		<li><a href="https://www.soroptimist-danmark.dk/">SI Danmark</a></li>
 		<li><a href="https://www.soroptimist-danmark.dk/danske-klubber/">Danske klubber</a></li>
-		<li><a href="https://www.soroptimist-danmark.dk/links/">Links</a></li>
 	</ul>
 </nav>
 
