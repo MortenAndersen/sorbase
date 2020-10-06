@@ -134,7 +134,7 @@ if ( ! function_exists ( 'referencer_type' ) ) {
                         echo '<h3>' . $term->name . '</h3>';
                         echo '<p>' . $term->description . '</p>';
                     echo '</div>';
-                    echo '<div class="simple-archive flex-con g4">';
+                    echo '<div class="simple-archive flex-con g4 produkter">';
                         while( $posts->have_posts() ) : $posts->the_post();
                             echo '<div class="flex-item">';
                                 echo '<article id="post-' . get_the_ID() . '" class="' . $post_class = implode( ' ', get_post_class() ) . '"">';
