@@ -8,6 +8,7 @@
     figcaption {
         display: none;
     }
+
     &.widget {
         margin: 0;
     }
@@ -26,7 +27,8 @@
     bottom: 0;
     left: 0;
     top: 0;
-    > a {
+
+    >a {
         text-decoration: none;
         background: #fed404;
         color: #000;
@@ -34,60 +36,70 @@
         float: right;
         margin-top: .5em;
         transition: 1s all;
-        &:hover {background: orange;
+
+        &:hover {
+            background: orange;
         }
     }
 }
 
 .banner-text {
- text-align: center;
-  background: rgba(0,0,0,.5);
-  padding: 2vw 0;
-  text-shadow: 1px 1px #000;
-  > * {
-    margin: 0;
-  }
-}
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    padding: 2vw 0;
+    text-shadow: 1px 1px #000;
 
-.banner-content {
-  position: relative;
- color: #fff;
- }
-
-
-@media (min-width: 700px){
-.banner-content {
-
-  font-size: clamp(1rem, 3vw, 3rem);
-  line-height: 1.1;
-  display: grid;
- align-items: center;
-  height: 100%;
-
-
-}
-.banner-text {
- text-align: center;
-  background: rgba(0,0,0,.2);
-  padding: 2vw 0;
-}
-.banner-text-con {
-    > a {
-        position: absolute;
-        right: 1em;
-        bottom: 2em;
-        z-index: 100;
-
-        padding: .5em 2em;
+    >* {
+        margin: 0;
     }
 }
+
+.banner-content {
+    position: relative;
+    color: #fff;
 }
-@media (min-width: 769px){
+
+
+@media (min-width: 700px) {
+    .banner-content {
+
+        font-size: clamp(1rem, 3vw, 3rem);
+        line-height: 1.1;
+        display: grid;
+        align-items: center;
+        height: 100%;
+
+
+    }
+
+    .banner-text {
+        text-align: center;
+        background: rgba(0, 0, 0, .2);
+        padding: 2vw 0;
+    }
+
     .banner-text-con {
-    > a {
+        >a {
+            position: absolute;
+            right: 1em;
+            bottom: 2em;
+            z-index: 100;
 
-        right: 2em;
-
+            padding: .5em 2em;
+        }
     }
 }
+
+@media (min-width: 769px) {
+    .banner-text-con {
+        >a {
+
+            right: 2em;
+
+        }
+    }
+}
+
+.bx-wrapper {
+    visibility: hidden;
 }

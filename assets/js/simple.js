@@ -114,6 +114,9 @@
             autoHover: true
         });
 
+        // Vis bx-slider
+        $('.bx-wrapper').css("visibility", "visible");
+
         // Video
         $(".video").fitVids();
 
