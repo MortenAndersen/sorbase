@@ -150,7 +150,9 @@ if ( ! function_exists ( 'referencer_type' ) ) {
                                             the_title( '<h4 class="post-loop-title">', '</h4>');
                                         }
                                     echo '</a>';
-                                    the_excerpt();
+                                    echo '<div class="shop-excerpt">';
+                                        the_excerpt();
+                                    echo '</div>';
                                     echo '<div class="more-link-con"><a href="' . get_permalink() . '" class="more-link">' . __( 'Læs mere', 'simpletheme') . '</a></div>';
                                 echo '</article>';
                             echo '</div>';
