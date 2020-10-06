@@ -326,3 +326,16 @@ a.knap2 {
         }
     }
 }
+
+.box-shortcode {
+    .event {
+        border-color: #fff;
+    }
+    .event-con {
+        .event {
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+    }
+}
