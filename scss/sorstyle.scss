@@ -1,7 +1,9 @@
-.ydelse .content-img img {
-    width: 100%;
+.ydelse .content-img  {
+    background: #f2f2f2;
 }
-
+.ydelse .content-img img {
+    display: block;
+}
 .type-liste {
     border-bottom: 1px solid;
     padding-bottom: 1em;
