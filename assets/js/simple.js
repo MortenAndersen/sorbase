@@ -102,7 +102,9 @@
             controls: false
         });
 
-        // simpleTheme_banner Slider
+ // simpleTheme_banner Slider
+
+ /*
         $('.simpleTheme_banner').bxSlider({
             mode: 'fade',
             speed: 2500,
@@ -111,11 +113,28 @@
             pager: false,
             controls: false,
             touchEnabled: false,
-            autoHover: true
+            autoHover: true,
+            preloadImages: 'all',
         });
+*/
 
-        // Vis bx-slider
-        $('.bx-wrapper').css("visibility", "visible");
+
+        $('.simpleTheme_banner').show();
+        var $slider = $('.simpleTheme_banner > div');
+            if ($slider.length > 1) {
+                var slider = $('.simpleTheme_banner').bxSlider({
+                    mode: 'fade',
+                    speed: 2500,
+                    pause: 6000,
+                    auto: true,
+                    pager: false,
+                    controls: false,
+                    touchEnabled: false,
+                    autoHover: true,
+                    preloadImages: 'all',
+                });
+            }
+
 
         // Video
         $(".video").fitVids();

@@ -100,6 +100,13 @@
     }
 }
 
-.bx-wrapper {
-    visibility: hidden;
+.simpleTheme_banner {
+    display: none;
+}
+.bx-viewport {
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
 }
