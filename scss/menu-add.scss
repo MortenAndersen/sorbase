@@ -52,7 +52,7 @@
         border-radius: 3px;
     }
     li {
-        border-right: 1px solid;
+        border-right: 1px solid #000;
         margin-right: .5em;
         padding-right: .5em;
         &:last-of-type {
@@ -62,7 +62,7 @@
         }
     }
     a {
-        color: #fff;
+        color: #000;
         display: block;
     }
 }
