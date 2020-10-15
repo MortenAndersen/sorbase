@@ -9,6 +9,7 @@
       <div class="event-data">
         <h4>Dato:</h4>
         <?php simpleEvent_showdate(); ?>
+        <div class="event-label"><?php the_field('event_label'); ?></div>
       </div>
       <?php get_template_part( 'template/page/aside', 'right' ); ?>
     </aside>
