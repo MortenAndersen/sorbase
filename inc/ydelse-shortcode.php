@@ -12,8 +12,7 @@ function simpleTheme_ydelser($atts) {
  	'post_type' => 'ydelse',
  	'orderby' => 'menu_order',
   'order' => 'asc',
- 	//'post__in' => $id_array,
-  'posts_per_page' => -1,
+ 	'posts_per_page' => 8,
  ) );
 
 
