@@ -16,8 +16,8 @@ function simpleTheme_banner($atts) {
  if ( $loop->have_posts() ) {
   echo '<div class="simpleTheme_banner">';
   while ( $loop->have_posts() ) : $loop->the_post();
- 	  echo '<div id="post-id-' .get_the_ID(). '">';
     // the_post_thumbnail();
+    echo '<div id="post-id-' .get_the_ID(). '">';
     $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
     echo '<img src="' . $featured_img_url . '" />';
     echo '<div class="l-wrap l-banner banner-text-con">';

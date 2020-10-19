@@ -27,6 +27,7 @@
     bottom: 0;
     left: 0;
     top: 0;
+    display: none;
 
     >a {
         text-decoration: none;
@@ -43,6 +44,11 @@
     }
 }
 
+@media (min-width: 700px){
+    .banner-text-con {
+        display: block;
+    }
+}
 .banner-text {
     text-align: center;
     background: rgba(0, 0, 0, .5);
@@ -102,6 +108,7 @@
 
 .simpleTheme_banner {
     display: none;
+    position: relative;
 }
 .bx-viewport {
     -webkit-transform: translatez(0);
