@@ -34,6 +34,8 @@ function simpleTheme_ydelser($atts) {
       the_title( '<h4 class="post-loop-title">', '</h4>');
     }
     the_excerpt();
+
+    echo '<p class="carousel-more"><span class="knap">Læs mere</span></p>';
     echo '</a>';
  	 echo '</div>';
  endwhile; wp_reset_query();
