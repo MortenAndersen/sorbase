@@ -10,6 +10,7 @@
         <h4>Dato:</h4>
         <?php simpleEvent_showdate(); ?>
         <div class="event-label"><?php the_field('event_label'); ?></div>
+        <div class="event-kort-tekst"><?php the_field('event_kort_beskrivelse'); ?></div>
       </div>
       <?php get_template_part( 'template/page/aside', 'right' ); ?>
     </aside>
