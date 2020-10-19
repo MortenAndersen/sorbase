@@ -10,8 +10,6 @@ function simpleTheme_ydelser($atts) {
 
  $loop = new WP_Query( array(
  	'post_type' => 'ydelse',
- 	'orderby' => 'menu_order',
-  'order' => 'asc',
  	'posts_per_page' => 8,
  ) );
 
