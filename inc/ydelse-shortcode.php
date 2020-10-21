@@ -4,9 +4,6 @@ function simpleTheme_ydelser($atts) {
   global $post;
   ob_start();
 
-  // define attributes and their defaults
-  extract(shortcode_atts(array( 'grid' => 'g4' ), $atts));
-	//$id_array = explode(',', $postid);
 
  $loop = new WP_Query( array(
  	'post_type' => 'ydelse',
@@ -16,9 +13,9 @@ function simpleTheme_ydelser($atts) {
 
  if ( $loop->have_posts() ) {
   echo '<div class="carousel">';
- 	echo '<div class="box-shortcode  ' . $grid . ' slider-carousel">';
+ 	echo '<div class="box-shortcode slider-carousel">';
  while ( $loop->have_posts() ) : $loop->the_post();
- 	echo '<div class="flex-itemf">';
+ 	echo '<div class="carousel-item">';
  	echo '<a href="' . get_the_permalink() . '" class="image-zoom">';
  		if ( has_post_thumbnail() ) {
         echo '<div class="box-img">';
@@ -32,8 +29,8 @@ function simpleTheme_ydelser($atts) {
     }
     the_excerpt();
 
-    echo '<p class="carousel-more"><span class="knap">Læs mere</span></p>';
     echo '</a>';
+    echo '<p class="carousel-more"><a href="' . get_the_permalink() . '"><span>Læs mere</span></a></p>';
  	 echo '</div>';
  endwhile; wp_reset_query();
  echo '</div>';
