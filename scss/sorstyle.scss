@@ -130,6 +130,7 @@
     font-weight: bold;
     color: #063769;
     display: block;
+    clear: both;
 }
 .box-shortcode,
 .entotre {
@@ -360,4 +361,8 @@ a.knap2 {
 }
 .simple-archive.produkter .flex-item article .more-link-con {
     margin-top: 1em
+}
+.listing-item .image {
+    margin: 0 5px 5px 0;
+    width: 55px;
 }
