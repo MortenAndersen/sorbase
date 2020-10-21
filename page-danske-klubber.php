@@ -29,7 +29,7 @@
 			<li class="site-42"><a href="https://www.soroptimist-danmark.dk/silkeborg">Silkeborg</a></li>
 			<li class="site-44"><a href="https://www.soroptimist-danmark.dk/skanderborg">Skanderborg</a></li>
 			<li class="site-3"><a href="https://www.soroptimist-danmark.dk/skjerntarm">Skjern Tarm</a></li>
-			<li class="site-54"><a href="https://www.soroptimist-danmark.dk/aarhus">Århus</a></li>
+			<li class="site-54"><a href="https://www.soroptimist-danmark.dk/aarhus">Aarhus</a></li>
 		</ul>
 	</div>
 
@@ -60,7 +60,7 @@
 			<li class="site-48"><a href="https://www.soroptimist-danmark.dk/toender">Tønder</a></li>
 			<li class="site-49"><a href="https://www.soroptimist-danmark.dk/varde">Varde</a></li>
 			<li class="site-50"><a href="https://www.soroptimist-danmark.dk/vejen">Vejen</a></li>
-			<li class="site-53"><a href="https://www.soroptimist-danmark.dk/aabenraa">Åbenrå</a></li>
+			<li class="site-53"><a href="https://www.soroptimist-danmark.dk/aabenraa">Aabenrå</a></li>
 		</ul>
 	</div>
 
@@ -80,7 +80,6 @@
 			<li class="site-8"><a href="https://www.soroptimist-danmark.dk/bornholmleonora">Bornholm Leonora</a></li>
 			<li class="site-10"><a href="https://www.soroptimist-danmark.dk/broendby">Brøndby</a></li>
 			<li class="site-13"><a href="https://www.soroptimist-danmark.dk/gentofte">Gentofte</a></li>
-			<li class="site-55"><a href="https://www.soroptimist-danmark.dk/glostrup">Glostrup</a></li>
 			<li class="site-25"><a href="https://www.soroptimist-danmark.dk/kastruptaarnby">Kastrup Tårnby</a></li>
 			<li class="site-28"><a href="https://www.soroptimist-danmark.dk/koebenhavn">København</a></li>
 			<li class="site-29"><a href="https://www.soroptimist-danmark.dk/koebenhavnathene">København Athene</a></li>
