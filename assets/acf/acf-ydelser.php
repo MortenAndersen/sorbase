@@ -93,7 +93,14 @@ acf_add_local_field_group(array(
 				'value' => 'ydelse',
 			),
 		),
-	),
+	array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'aktivitet',
+			),
+		),
+),
 	'menu_order' => 0,
 	'position' => 'normal',
 	'style' => 'default',

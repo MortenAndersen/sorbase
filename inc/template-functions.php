@@ -307,7 +307,6 @@ function simpleTheme_acf_gallery() {
 
 function simpleTheme_acf_person() {
     if( function_exists('acf_add_local_field_group') ):
-        if( is_singular( 'person' ) && get_field('titel') || get_field('mobiltelefon') || get_field('telefon') || get_field('email') ) {
             echo '<ul class="person--data design-list">';
                 if( get_field('titel') ) {
                     echo '<li class="title">' . get_field('titel') . '</li>';
@@ -333,7 +332,7 @@ function simpleTheme_acf_person() {
                     echo '<a href="' . get_field('linkedin') . '" target="_blank">Linkedin</a></li>';
                 }
                 if( get_field('facebook') ) {
-                    echo '<li class="phone icon">';
+                    echo '<li class="facebook icon">';
                     get_template_part( 'assets/images/icon/facebook' );
                     echo '<a href="' . get_field('facebook') . '" target="_blank">facebook</a></li>';
                 }
@@ -344,8 +343,6 @@ function simpleTheme_acf_person() {
                 }
             echo '</ul>';
             edit_post_link( __( 'edit', 'simpletheme' ), '<p>', '</p>' );
-
-        }
     endif;
 }
 

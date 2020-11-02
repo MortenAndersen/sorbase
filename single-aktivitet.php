@@ -5,7 +5,8 @@ get_header();
       echo '<div class="main simple-grid-item-main">';
         get_template_part( 'template/page/ydelse', 'loop' );
         simpleTheme_go_back();
-      echo '</div>'; ?>
+      echo '</div>';
+      ?>
 
     <aside class="aside-right simple-grid-item-aside<?php simpleTheme_aside_class(); ?> order-3">
 
@@ -15,7 +16,7 @@ get_header();
 // https://wordpress.stackexchange.com/questions/75112/query-related-posts-in-a-custom-post-type-by-a-custom-taxonomy
 
 //Get array of terms
-$terms = get_the_terms( $post->ID , 'ydelse-type', 'string' );
+$terms = get_the_terms( $post->ID , 'aktivitet-type', 'string' );
 //Pluck out the IDs to get an array of IDS
 if ( ! empty( $terms )) {
 $term_ids = wp_list_pluck( $terms,'term_id' );
@@ -24,10 +25,10 @@ $term_ids = wp_list_pluck( $terms,'term_id' );
 //Query posts with tax_query. Choose in 'IN' if want to query posts with any of the terms
 //Chose 'AND' if you want to query for posts with all terms
   $second_query = new WP_Query( array(
-      'post_type' => 'ydelse',
+      'post_type' => 'aktivitet',
       'tax_query' => array(
                     array(
-                        'taxonomy' => 'ydelse-type',
+                        'taxonomy' => 'aktivitet-type',
                         'field' => 'id',
                         'terms' => $term_ids,
                         'operator'=> 'IN' //Or 'AND' or 'NOT IN'
@@ -42,7 +43,7 @@ $term_ids = wp_list_pluck( $terms,'term_id' );
 } else {
 
   $second_query = new WP_Query( array(
-      'post_type' => 'ydelse',
+      'post_type' => 'aktivitet',
       'posts_per_page' => 3,
       'ignore_sticky_posts' => 1,
       'orderby' => 'rand',

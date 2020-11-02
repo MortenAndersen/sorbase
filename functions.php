@@ -89,6 +89,7 @@ require get_parent_theme_file_path( '/inc/widget.php' );
 // Theme Post type
 require get_parent_theme_file_path( '/inc/post-type.php' );
 require get_parent_theme_file_path( '/inc/post-type-ydelse.php' );
+require get_parent_theme_file_path( '/inc/post-type-aktiviteter.php' );
 require get_parent_theme_file_path( '/inc/post-type-reference.php' );
 require get_parent_theme_file_path( '/inc/post-type-banner.php' );
 

@@ -4,11 +4,23 @@
 	simpleTheme_the_post_thumbnail();
 	the_title( '<h1>', '</h1>');
 
+if ( is_single() && 'ydelse' == get_post_type() ) {
 	if ( ! empty( get_the_term_list( $post->ID, 'ydelse-type') )) {
 		echo '<div class="type-liste">';
 		 echo get_the_term_list( $post->ID, 'ydelse-type', '', ', ', '' );
 		echo '</div>';
 	}
+
+}
+
+if ( is_single() && 'aktivitet' == get_post_type() ) {
+	if ( ! empty( get_the_term_list( $post->ID, 'aktivitet-type') )) {
+		echo '<div class="type-liste">';
+		 echo get_the_term_list( $post->ID, 'aktivitet-type', '', ', ', '' );
+		echo '</div>';
+	}
+
+}
 
 	the_content();
  endwhile;
