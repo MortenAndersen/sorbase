@@ -65,7 +65,7 @@
         $(".all-menu li li:has(ul)").addClass('has-sub-menu');
 
         // Lightbox
-        $('.main figure a, .lightbox-content a, .gallery-item a').attr('data-lightbox', 'content-image');
+        $('.lightbox-content a, .gallery-item a').attr('data-lightbox', 'content-image');
 
         // Slider
         $('.slider').bxSlider({
@@ -92,7 +92,6 @@
             prevText: ' < ',
         });
 
-
         // Banner Slider
         $('.banner .gallery').bxSlider({
             mode: 'fade',
@@ -101,22 +100,6 @@
             pager: false,
             controls: false
         });
-
- // simpleTheme_banner Slider
-
- /*
-        $('.simpleTheme_banner').bxSlider({
-            mode: 'fade',
-            speed: 2500,
-            pause: 6000,
-            auto: true,
-            pager: false,
-            controls: false,
-            touchEnabled: false,
-            autoHover: true,
-            preloadImages: 'all',
-        });
-*/
 
 
         $('.simpleTheme_banner').show();
