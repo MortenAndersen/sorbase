@@ -5,9 +5,9 @@
     overflow-wrap: break-word;
 
     .widget-title {
-        border-bottom: 3px solid #fff;
+        border-bottom: 2px solid #fff;
         border-top: 3px solid #fff;
-        padding-bottom: 1em;
+        padding: 1em 0;
         font-weight: bold;
         margin-bottom: 2em;
     }
@@ -61,7 +61,7 @@
         }
 
         &.current-menu-item {
-            a {
+            > a {
                 background: #dddee0;
             }
         }
