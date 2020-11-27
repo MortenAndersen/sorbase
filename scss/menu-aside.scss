@@ -1,15 +1,17 @@
 .widget_nav_menu {
-    background: #f2f2f2;
+    background: #f2f2f27a;
     padding: 2em;
-    box-shadow: 0 0 2px #848484;
+    box-shadow: 0 0 3px #07325e;
+    border-radius: 3px;
     overflow-wrap: break-word;
-
+    margin-bottom: 2em;
+    overflow: hidden;
     .widget-title {
-        border-bottom: 2px solid #fff;
-        border-top: 3px solid #fff;
-        padding: 1em 0;
-        font-weight: bold;
-        margin-bottom: 2em;
+        border-bottom: 2px solid #fed404;
+    border-top: 2px solid #063463;
+    padding: 1em 0 1em 5px;
+    font-weight: bold;
+    margin: 0 0 1em 0;
     }
 
 
@@ -62,7 +64,7 @@
 
         &.current-menu-item {
             > a {
-                background: #dddee0;
+                background: #dddee080;
             }
         }
     }
