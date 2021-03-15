@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
 				"pad",
 				"padding-top\tproperty"
 			],
@@ -30,14 +42,6 @@
 			[
 				"back",
 				"background-size"
-			],
-			[
-				"mar",
-				"margin-bottom\tproperty"
-			],
-			[
-				"col",
-				"columns\tproperty"
 			],
 			[
 				"min",
@@ -218,10 +222,6 @@
 			[
 				"fl",
 				"flex\tproperty"
-			],
-			[
-				"border-r",
-				"border-right"
 			],
 			[
 				"txt",
@@ -520,9 +520,11 @@
 	"buffers":
 	[
 		{
+			"file": "scss/module.scss",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 5116,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -620,10 +622,14 @@
 	},
 	"expanded_folders":
 	[
-		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase"
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/assets",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/scss"
 	],
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/scss/font.scss",
+		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/scss/form.scss",
 		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/agroalliancen/scss/footer.scss",
 		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/agroalliancen/footer.php",
 		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/agroalliancen/scss/menu.scss",
@@ -705,8 +711,6 @@
 		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/page-danske-klubber.php",
 		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/inc/ydelse-shortcode.php",
 		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/assets/js/simple.js",
-		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/scss/form.scss",
-		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/scss/font.scss",
 		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/single-event.php",
 		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/inc/banner-shortcode.php",
 		"/Applications/MAMP/htdocs/wordpress/wp-content/themes/sorbase/scss/slider.scss",
@@ -755,7 +759,7 @@
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 46.0
 	},
 	"find_in_files":
 	{
@@ -769,6 +773,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"event-data"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -791,18 +796,19 @@
 			[
 				{
 					"buffer": 0,
+					"file": "scss/module.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 5116,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5080,
+								5080
 							]
 						],
 						"settings":
@@ -812,12 +818,27 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										5115,
+										5116
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										5006,
+										5007
+									]
 								},
 								"unmatched":
 								{
@@ -825,26 +846,26 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -855,36 +876,39 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
 							],
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"color_scheme": "Packages/User/Color Highlighter/themes/brogrammer.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7295.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

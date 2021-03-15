@@ -351,9 +351,14 @@ figure {
 }
 .event-data {
     padding: 1em;
-    border: 1px solid #063769;
+    border: 1px solid #06376938;
+    background: #f7f7f7;
     border-radius: 2px;
     h4 {
         margin: 0;
+    }
+    aside & {
+        font-size: 1.2em;
+        line-height: 1.3;
     }
 }
